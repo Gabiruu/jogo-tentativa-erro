@@ -1,0 +1,174 @@
+/*
+    font-family: 'Bungee', cursive;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Londrina Shadow', cursive;
+*/
+html {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background-color: #3b2006;
+  min-height: 88.4%;
+  width: 94.4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  border: 0.5vh #a16934 solid;
+}
+
+.container {
+  background-color: #3b2006;
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  color: #d8d8d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 6vh;
+  line-height: 130%;
+}
+
+.txt {
+  font-size: 2.5vh;
+  line-height: 180%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.btn-style {
+  width: 100%;
+  font-size: 2.5vh;
+}
+
+.palpite {
+  max-width: 348px;
+  font-size: 15px !important;
+  height: 30px;
+  margin-top: 5px;
+  text-shadow: inherit !important;
+}
+
+.enviaPalpite {
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: #f7d51d;
+  box-shadow: inset -4px -4px 0px 0px #e59400;
+  max-width: 395px;
+  left: -5px;
+}
+
+.btn-mais,
+.btn-menos {
+  height: 80px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.btn-style,
+.btn-menos,
+.btn-mais,
+.palpite {
+  background: #92cd41;
+  position: relative;
+  padding: 20px;
+  box-shadow: inset -4px -4px 0px 0px #4aa52e;
+  font-family: "Press Start 2P", cursive;
+  text-decoration: none;
+  color: #000;
+  border-color: inherit;
+  text-shadow: 0 1px rgb(10, 10, 10), -1px 0 rgb(0, 0, 0),
+    -1px 2px rgb(10, 10, 10), -2px 1px rgb(0, 0, 0), -2px 3px rgb(10, 10, 10);
+  text-align: center;
+}
+
+.btn-style:after,
+.btn-style:before,
+.btn-menos,
+.btn-mais,
+.palpite {
+  left: -6px;
+  top: -6px;
+  border-left: 6px black solid;
+  border-right: 6px black solid;
+  border-top: 6px black solid;
+  border-bottom: 6px black solid;
+}
+
+.btn-style:before,
+.btn-style:after,
+.btn-menos:before,
+.btn-mais:before,
+.palpite:after,
+.palpite:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    min-height: 94.4%;
+  }
+  .palpite {
+    width: 347px;
+    left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    width: 91.4%;
+  }
+  .container {
+    max-width: 300px;
+  }
+  .form {
+    max-width: 300px;
+  }
+  .palpite {
+    width: 148px;
+    left: -6px;
+    margin-top: 10px;
+    height: 10px;
+  }
+  h1 {
+    font-size: 4vh;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  body {
+    width: 91.4%;
+  }
+  .container {
+    max-width: 270px;
+  }
+  .form {
+    max-width: 270px;
+  }
+}
